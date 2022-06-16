@@ -14,19 +14,22 @@ public class DoorState : MonoBehaviour
 
     //Gets the collider 
     //Subscribes The Door functions to the according event(Action)
-    private void Start(){
+    private void Start()
+    {
         DoorCollider = GetComponent<Collider2D>();
         EventController.current.OnLeverTrigger += DoorUnlock;
         EventController.current.OnLeverExit += DoorLock;
     }
 
     
-    public void DoorUnlock(){
+    public void DoorUnlock()
+    {
         DoorCollider.enabled = false;
         spriteRenderer.sprite = newSprite;
     }
 
-    public void DoorLock(){
+    public void DoorLock()
+    {
         DoorCollider.enabled = true;
         spriteRenderer.sprite = Standard;
     }

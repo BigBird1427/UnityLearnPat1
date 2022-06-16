@@ -12,7 +12,8 @@ public class EventController : MonoBehaviour
     //Creates an EventController Object
     public static EventController current;
     //Intiatizles the Object
-    private void Awake(){
+    private void Awake()
+    {
         current = this;
     }
 
@@ -25,15 +26,18 @@ public class EventController : MonoBehaviour
     public void LeverTrigger()
     { 
         //Makes sure that event isn't empty
-        if(OnLeverTrigger != null){
+        if(OnLeverTrigger != null)
+        {
             OnLeverTrigger();
         }
     }
     
     //A function to invoke an event
-    public void LeverExit(){
+    public void LeverExit()
+    {
         //Makes sure that event isn't empty
-        if(OnLeverExit != null){
+        if(OnLeverExit != null)
+        {
             OnLeverExit();
         }
     }

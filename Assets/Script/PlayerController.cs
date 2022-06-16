@@ -22,7 +22,8 @@ public class PlayerController : MonoBehaviour
         zeroSpeed = new Vector2(0.0f,0.0f);
     }
 
-    void Speed(){
+    void Speed()
+    {
         X = 0;
         Y = 0;
 
@@ -36,34 +37,29 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.W)){
+        if(Input.GetKey(KeyCode.W)){
             Speed();
             Y = 2;
             animator.SetInteger("TymeWalkUP",1);
             lastHitKey = KeyCode.W;
         }
-        if(Input.GetKeyDown(KeyCode.S)){
+        if(Input.GetKey(KeyCode.S)){
             Speed();
             Y = -2;
             animator.SetInteger("TymeBack",1);
             lastHitKey = KeyCode.S;
         }
-        if(Input.GetKeyDown(KeyCode.A)){
+        if(Input.GetKey(KeyCode.A)){
             Speed();
             X = -2;
             animator.SetInteger("TymeLeft",1);
             lastHitKey = KeyCode.A;
         }
-        if(Input.GetKeyDown(KeyCode.D)){
+        if(Input.GetKey(KeyCode.D)){
             Speed();
             X = 2;
             animator.SetInteger("TymeRight",1);
             lastHitKey = KeyCode.D;
-        }
-
-
-        if(Input.GetKeyDown(KeyCode.Q)){
-
         }
         
 
