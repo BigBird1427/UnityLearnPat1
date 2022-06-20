@@ -7,15 +7,21 @@ public class LeverEvent : MonoBehaviour
 {
     //Calls the function that would call the event OnLeverTrigger
     //When in proximity of the lever
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        EventController.current.LeverTrigger();
+
+    public void OnCollisionStay2D(Collision2D col){
+        //Debug.Log(col.gameObject.tag);
+        if(col.gameObject.CompareTag("Player"))
+        {
+            if(Input.GetKey(KeyCode.Return))
+            EventController.current.LeverTrigger();
+        }
     }
 
-    //Calls the function that would call the event OnLeverExit
-    //When leaving proximity of the lever
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        EventController.current.LeverExit();
+     public void OnCollisionExit2D(Collision2D col){
+        //Debug.Log(col.gameObject.tag);
+        if(col.gameObject.CompareTag("Player"))
+        {
+            EventController.current.LeverExit();
+        }
     }
 }

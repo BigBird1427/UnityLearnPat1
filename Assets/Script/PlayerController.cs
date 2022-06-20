@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour
         animator.SetInteger("TymeWalkUP", 0);
     }
 
+   
+
 
     // Update is called once per frame
     void Update()
@@ -61,6 +63,7 @@ public class PlayerController : MonoBehaviour
             animator.SetInteger("TymeRight",1);
             lastHitKey = KeyCode.D;
         }
+
         
 
         if(Input.GetKeyUp(KeyCode.W) && lastHitKey == KeyCode.W){

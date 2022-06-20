@@ -259,19 +259,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3055199a085b54aa40a8062d0bda9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &90714598
-MonoBehaviour:
+--- !u!50 &90714602
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90714593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &120634415
 GameObject:
   m_ObjectHideFlags: 0
@@ -2751,6 +2759,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1689934576205906828, guid: d55b3476d8f1e9047afbc5ac6d83778a, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2645296005941488129, guid: d55b3476d8f1e9047afbc5ac6d83778a, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -2863,8 +2875,8 @@ GameObject:
   - component: {fileID: 1491698955}
   - component: {fileID: 1491698959}
   - component: {fileID: 1491698960}
-  m_Layer: 2
-  m_Name: TymeG4WalkForward_0
+  m_Layer: 6
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
