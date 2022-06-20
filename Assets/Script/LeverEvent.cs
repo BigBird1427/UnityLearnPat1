@@ -39,7 +39,7 @@ public class LeverEvent : MonoBehaviour
         Button1.gameObject.SetActive(false);
         if(col.gameObject.CompareTag("Player"))
         {
-            EventController.current.LeverExit();
+            //EventController.current.LeverExit();
         }
     }
 }

@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5078884998853045567}
   - component: {fileID: 5215929310142504437}
-  - component: {fileID: 3109479119493600836}
+  - component: {fileID: 892672768454579357}
+  - component: {fileID: 1719839419141472829}
   m_Layer: 0
   m_Name: TymeUnityDemo_4
   m_TagString: Untagged
@@ -28,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.637801, y: -2.2253911, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,6 +45,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -69,10 +72,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1556102509
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3286939929570484655, guid: f12eeedf8462e854d91780ec0f8a6f7c, type: 3}
+  m_Sprite: {fileID: -3863850907620784542, guid: f12eeedf8462e854d91780ec0f8a6f7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -83,7 +86,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3109479119493600836
+--- !u!114 &892672768454579357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4740953414754297342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f3175e2b5b1784389867c5640089b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 5215929310142504437}
+  Standard: {fileID: -3863850907620784542, guid: f12eeedf8462e854d91780ec0f8a6f7c, type: 3}
+  newSprite: {fileID: -3286939929570484655, guid: f12eeedf8462e854d91780ec0f8a6f7c, type: 3}
+  DoorCollider: {fileID: 0}
+--- !u!61 &1719839419141472829
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

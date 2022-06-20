@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //add it to an array and have 1 for most recent set others to 0
         if(Input.GetKey(KeyCode.W)){
             Speed();
             Y = 2;
