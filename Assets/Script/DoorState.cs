@@ -18,7 +18,7 @@ public class DoorState : MonoBehaviour
     {
         DoorCollider = GetComponent<Collider2D>();
         EventController.current.OnLeverTrigger += DoorUnlock;
-        EventController.current.OnLeverExit += DoorLock;
+        //EventController.current.OnLeverExit += DoorLock;
     }
 
     

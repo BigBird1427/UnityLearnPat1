@@ -21,6 +21,7 @@ public class EventController : MonoBehaviour
     //Events that can be subscibe to
     public event Action OnLeverTrigger;
     public event Action OnLeverExit;
+    public event Action OnEnterLever;
 
     //A function to invoke an event
     public void LeverTrigger()
@@ -39,6 +40,15 @@ public class EventController : MonoBehaviour
         if(OnLeverExit != null)
         {
             OnLeverExit();
+        }
+    }
+
+    public void EnterLever()
+    {
+        //Makes sure that event isn't empty
+        if(OnEnterLever != null)
+        {
+            OnEnterLever();
         }
     }
 
